@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <input type="text" placeholder="Search tasks..." class="search-bar" id="searchesBar">
+            <div class="user-avatar">
+                <img src="https://i.pravatar.cc/50?u=student" alt="User Avatar">
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Completed</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- New tasks -->
+            <p> 
+                <input type = "text" id="todoInput" placeholder="Enter the task">
+                <button id="addButton">Add</button>
+            </p>
+
+            <h2>Task List</h2>
+            
+            <table class="task-table">
+                <thead>
+                    <tr>
+                        <th id="status">Status</th>
+                        <th id ="task">Task</th>
+                        <th id="datecreated">Date Created</th>
+                        <th id="action">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Example rows -->
+                    <tr>
+                        <td>Incomplete</td>
+                        <td>Complete user dashboard</td>
+                        <td>2024-09-23</td>
+                        <td><button class="complete-btn">Mark as Complete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Incomplete</td>
+                        <td>Fix sidebar layout issues</td>
+                        <td>2024-09-22</td>
+                        <td><button class="complete-btn">Mark as Complete</button></td>
+                    </tr>
+                    <!-- Repeat for 10+ tasks -->
+
+
+                </tbody>
+            </table>
+
+            <!-- Widget to display tasks -->
+            <div class="widget">
+                <h2>To Do list:</h2>
+                <ul id="searches"></ul>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
