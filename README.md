@@ -1,2 +1,2 @@
 # todolist
-To do list Javacript
+To do list JavaScript
